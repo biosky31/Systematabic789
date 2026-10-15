@@ -297,8 +297,8 @@ export const Grade7ExplorerTab: React.FC<Grade7ExplorerTabProps> = ({
             <p className="text-xs md:text-sm text-slate-300 mt-1">{currentUnit.theme}</p>
           </div>
 
-          {/* Sub Navigation Tabs */}
-          <div className="flex flex-wrap items-center gap-1.5 bg-slate-800 p-1 rounded-xl">
+          {/* Sub Navigation Tabs (Scrollable on mobile) */}
+          <div className="flex items-center gap-1.5 bg-slate-800 p-1 rounded-xl overflow-x-auto no-scrollbar whitespace-nowrap">
             {[
               { id: 'reading', label: 'النص والشرح', icon: BookOpen },
               { id: 'vocabulary', label: 'المفردات', icon: BookA },

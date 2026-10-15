@@ -307,7 +307,7 @@ export const Grade8ExplorerTab: React.FC<Grade8ExplorerTabProps> = ({
       </div>
 
       {/* Sub-Section Navigation Tabs */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-slate-200">
+      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 border-b border-slate-200">
         {[
           { id: 'reading', label: 'القراءة والشرح والأفكار', icon: BookOpen, count: 'النص الكامل' },
           { id: 'vocabulary', label: 'المعجم والمفردات', icon: BookA, count: `${currentUnit.readingLesson.vocabulary.length} كلمة` },

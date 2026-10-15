@@ -88,7 +88,7 @@ export const GrammarSuiteTab: React.FC<GrammarSuiteTabProps> = ({ currentGrade =
                   : 'bg-white text-slate-700 hover:bg-slate-50'
               }`}
             >
-              📘 السابع (12)
+              📘 السابع ({grade7Grammar.length})
             </button>
             <button
               onClick={() => setSelectedGradeFilter('grade8')}
@@ -98,7 +98,7 @@ export const GrammarSuiteTab: React.FC<GrammarSuiteTabProps> = ({ currentGrade =
                   : 'bg-white text-slate-700 hover:bg-slate-50'
               }`}
             >
-              📗 الثامن (12)
+              📗 الثامن ({grade8Grammar.length})
             </button>
             <button
               onClick={() => setSelectedGradeFilter('grade9')}
@@ -108,7 +108,7 @@ export const GrammarSuiteTab: React.FC<GrammarSuiteTabProps> = ({ currentGrade =
                   : 'bg-white text-slate-700 hover:bg-slate-50'
               }`}
             >
-              🎓 التاسع (24)
+              🎓 التاسع ({grade9Grammar.length})
             </button>
             <button
               onClick={() => setSelectedGradeFilter('all')}

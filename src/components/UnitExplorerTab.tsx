@@ -116,8 +116,8 @@ export const UnitExplorerTab: React.FC<UnitExplorerTabProps> = ({
         </div>
       </div>
 
-      {/* Sub-section buttons */}
-      <div className="flex flex-wrap items-center gap-2 border-b border-slate-200 pb-3">
+      {/* Sub-section buttons (Scrollable horizontally on mobile to preserve vertical reading space) */}
+      <div className="flex items-center gap-2 border-b border-slate-200 pb-3 overflow-x-auto no-scrollbar py-1">
         <button
           onClick={() => setActiveSubSection('reading')}
           className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs md:text-sm font-bold transition-all ${

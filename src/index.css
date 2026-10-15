@@ -1,6 +1,30 @@
 @import "tailwindcss";
 
 @layer base {
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Utility for hiding scrollbar */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Reading Mode Active Optimizations */
+  .reading-mode-active {
+    background-color: #f8fafc;
+  }
+
+  .reading-mode-active p {
+    line-height: 2.1 !important;
+  }
+
   @media print {
     @page {
       size: A4 landscape;

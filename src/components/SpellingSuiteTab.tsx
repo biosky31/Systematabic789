@@ -111,7 +111,7 @@ export const SpellingSuiteTab: React.FC<SpellingSuiteTabProps> = ({ currentGrade
                   : 'bg-white text-slate-700 hover:bg-slate-50'
               }`}
             >
-              📘 السابع (12)
+              📘 السابع ({grade7Spelling.length})
             </button>
             <button
               onClick={() => setSelectedGradeFilter('grade8')}
@@ -121,7 +121,7 @@ export const SpellingSuiteTab: React.FC<SpellingSuiteTabProps> = ({ currentGrade
                   : 'bg-white text-slate-700 hover:bg-slate-50'
               }`}
             >
-              📗 الثامن (12)
+              📗 الثامن ({grade8Spelling.length})
             </button>
             <button
               onClick={() => setSelectedGradeFilter('grade9')}
@@ -131,7 +131,7 @@ export const SpellingSuiteTab: React.FC<SpellingSuiteTabProps> = ({ currentGrade
                   : 'bg-white text-slate-700 hover:bg-slate-50'
               }`}
             >
-              🎓 التاسع (24)
+              🎓 التاسع ({grade9Spelling.length})
             </button>
             <button
               onClick={() => setSelectedGradeFilter('all')}
